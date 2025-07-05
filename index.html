@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Ярослав Шипилов">
+        <title>Hello</title>
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css"> 
+    </head>
+    <body>
+        <noscript>Включите JavaScript</noscript>
+        <!--Заголовок-->
+        <h1 style="text-align: center;">Тестовое задание СмартСофт</h1>
+        <!--Первая форма ввода данных-->
+        <form action="" method="" class="panel" id="user_info">
+            <p></p>
+            <div>   
+                <label>Имя</label><br>
+                <input minlength="3" type="text" required id="username" name="username"><br>
+            </div>
+            <div>
+                <label>Фамилия</label><br>
+                <input type="text" id="usersurname" name="usersurname"><br>
+            </div>
+            <div>
+                <label>Почта</label><br>
+                <input type="email" required id="email" name="email"><br>
+            </div>
+            <div>
+                <label>Сообщение</label><br>
+                <textarea required maxlength="80" id = "message" name="message"></textarea><br>
+            </div>
+                <button type="submit" id="sendButton">Отправить</button>
+            <p></p>
+        </form>
+        <!--Вторая форма ввода адреса-->
+        <form action="" method="" class="panel" id="order_form">
+            <p></p>
+                <label style="font-size: 18px;"><b>Информация о заказе</b></label><br>
+                <label style="color: lightgray; font-size: 12px;">Доставим за 2 дня</label>
+            <p></p>
+            <div>
+                <label>Полное имя</label><br>
+                <input minlength="3" type="text" required id="fullname" name="fullname"><br>
+            </div>
+            <div>
+                <label>Адрес доставки</label><br>
+                <input type="text" id="address" name="address"><br>
+            </div>
+            <div>
+                <label>Комментарий к доставке</label><br>
+                <textarea id="order_comm" name="order_comm"></textarea>
+            </div>
+            <div>
+                <input required style="margin: 10px" type="checkbox" id="contract" name="contract">
+                <label style="margin: 1px;" for="contract">Принять условия договoра-оферты</label>
+            </div>
+                <button type="button" id="click_order">Создать заказ</button>
+            <p></p>
+        </form>
+            <!--Третья с отзывами-->
+        <h2>Отзывы</h2>
+        <p style="margin-left: 30%; margin-top: -15px;">Популярные отзывы наших клиентов</p>
+    
+        <div id="reviews-container" class="reviews-container"></div>
+        
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="main.js"></script>
+    </body>
+</html>
